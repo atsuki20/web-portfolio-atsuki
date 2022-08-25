@@ -7,6 +7,10 @@
     <meta name="robots" content="noindex" />
     <title>Atsuki's Portfolio</title>
     <link rel="stylesheet" href="./assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <img 
@@ -20,8 +24,296 @@
       class="page-bg-icon page-bg-icon-rb"
     />
     <div class="page-cover bg-3 text-dark">
-      <h1 class="page-title text-1">portfolio</h1>
+      <h1 class="page-title text-1">Portfolio</h1>
 
+      
+      <!-- <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">English Title</div>
+          <div class="card-subtitle">日本語タイトル</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">内容</div>
+      </div>
+
+      <div style="height: 20px"></div> -->
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Self-Introduction</div>
+          <div class="card-subtitle">自己紹介</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <div class="card-basic-info-layout">
+            <!--<div>
+              <img src="./assets/me.png" alt="顔写真" class="my-photo" />
+            </div>-->
+            <div style="flex-grow: 1">
+              <div style="display: flex; gap: 1em; align-items: flex-end">
+                <h3 style="margin: 0; font-size: 2rem">斉藤 篤稀</h3>
+                <span style="padding-bottom: 4px">さいとう あつき</span>
+              </div>
+              <div class="bg-2" style="height: 2px"></div>
+              <div class="text-2" style="font-size: 0.95rem">Atsuki SAITO</div>
+
+              <div
+                class="text-1"
+                style="display: flex; gap: 0.5em; align-items: center"
+              >
+                <img src="./assets/icons/email.svg" alt="Email のアイコン" />
+                <span>atsuki31100220@gmail.com</span>
+              </div>
+
+              <div>福岡大学 工学部 電子情報工学科 3 年生</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-contents">
+          <span class="card-basic-info-label bg-1 text-light">自己紹介</span>
+          <p>
+            　はじめまして、斉藤 篤稀
+            といいます。このサイトは、私の趣味やスキルなどを紹介するポートフォリオです。
+            このポートフォリオが、Web の
+            初めての制作物です。どうぞご覧ください。
+          </p>
+          <!--<span class="card-basic-info-label bg-1 text-light">重要</span>
+          <p>
+            　このページは Web 制作の学習のためのページです。
+            掲載されている情報はすべて架空の設定であり、実際とは異なります。
+            また、プロフィール画像は
+            <a href="https://www.photo-ac.com/"></a>
+          </p>-->
+        </div>
+      </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="app-bar">
+        <div class="app-bar-title">MENU</div>
+        <div class="app-bar-button-cover">
+          <button onclick="scroller('#hobby')">趣味</button>
+          <button onclick="scroller('#skill')">スキル</button>
+          <button onclick="scroller('#mywork')">制作物</button>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="hobby">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Hobby</div>
+          <div class="card-subtitle">趣味</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          　ソフトテニスをすることが趣味です。中学高校の6年間部活に所属していました。
+          高校では、個人戦団体戦共に県大会に出場しました。
+          大学ではソフトテニスのサークルに所属しています。
+        </div>
+        <div
+          class="swiper-area"
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-title">手前のラケットを構えている人が私です</div>
+              <img src="./assets/photos/11.jpg" alt="手前のラケットを構えている人が私です" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">サーブを打っている場面</div>
+              <img
+                src="./assets/photos/22.jpg"
+                alt="サーブを打っている場面"
+                style="width: auto"
+              />
+            </div>
+            <!--<div class="swiper-slide">
+              <div class="swiper-title">高知県 四万十川 沈下橋</div>
+              <img src="./assets/photos/3.jpg" alt="高知県 四万十川 沈下橋" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">石川県 能登半島 聖域の岬</div>
+              <img src="./assets/photos/4.jpg" alt="石川県 能登半島 聖域の岬" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">長野県 軽井沢町 白糸の滝</div>
+              <img src="./assets/photos/5.jpg" alt="長野県 軽井沢町 白糸の滝" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">新潟県 糸魚川 白馬大仏前</div>
+              <img src="./assets/photos/6.jpg" alt="新潟県 糸魚川 白馬大仏前" />
+            </div>-->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="skill">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Skill</div>
+          <div class="card-subtitle">スキル</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents tile-grid-cover">
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>HTML / CSS</span>
+              <small>半年</small>
+            </div>
+            <div class="card-tile-text">
+              　Web のフロントサイドの言語です。
+              大学の講義では習わないため、学習サイト等で学び
+              ポートフォリオサイトを作成しました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>JavaScript / Node.js</span>
+              <small>半年</small>
+            </div>
+            <div class="card-tile-text">
+              　Web 系で最も有名な言語です。
+              フロントサイドでは、動きのある動作を作るために使用しました。
+              Node.js は、ビルドに使用したことがあります。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>C</span>
+              <small>3年</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義で１年の頃から学習しています。
+              講義での演習で、３目並べや、検索機能のある図書管理システムを作成しました。
+              また、１番使い慣れている言語でもあります。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>MySQL</span>
+              <small>1年</small>
+            </div>
+            <div class="card-tile-text">
+              　データベースです。 大学の講義で学習しました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Python</span>
+              <small>1年</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義で少し学習しました。
+              また、これから大学の講義などで使用していく予定です。 
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Java</span>
+              <small>１年</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義で学習しました。基本的な操作は学習したので、これから深く扱っていく予定です。
+              オブジェクト指向が難しいです。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="mywork">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">My Work</div>
+          <div class="card-subtitle">制作物</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <div class="work">
+            <div class="work-title">1. ポートフォリオサイト</div>
+            <div class="work-image">
+              <img src="./assets/works/work11.png" alt="ポートフォリオ" />
+            </div>
+            <div class="work-text">
+              <p>
+                　現在表示しているサイトです。
+                学習サイトを参考にしながら、制作しました。 初めて自分の手で Web
+                ページを作成することを知りました。
+              </p>
+
+              <small>こだわりのポイント</small>
+              <ul>
+                <li>
+                  <div>配色</div>
+                  柔らかい印象を持っていただけるように、ベースとなる色を、
+                  色の参考書から 3 色選択し、使用しました。
+                </li>
+                <li>
+                  <div>ナビゲーション</div>
+                  スマートフォン等、小さい画面で見たときに、セクションの移動が
+                  簡単にできるように、メニューを上部に固定しました。
+                  スクロールするまでは、ページの一部になるようにする部分に苦戦しました。
+                </li>
+                <li>
+                  <div>レスポンシブレイアウト</div>
+                  画面幅に応じてレイアウトが変わるようにし、崩れないように細かい部分まで調整しました。
+                </li>
+              </ul>
+
+              <small>使用した言語・ツール等</small>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>
+                  <a
+                    href="https://swiperjs.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Swiper</a
+                  >
+                  <small>(画像スライドショー)</small>
+                </li>
+              </ul>
+
+              <small>参考にしたサイト</small>
+              <ul>
+                <li>
+                  <a
+                    href="https://techselect-study.careerselect.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tech Select 学習サイト
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/ja/docs/Web/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MDN
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          
       <div style="height: 40px"></div>
 
       <footer class="footer-cover bg-2 text-light">
@@ -29,5 +321,38 @@
         <div class="footer-contents">&copy; Atsuki's web page.</div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-area', {
+        direction: 'horizontal',
+        spaceBetween: 30,
+        autoplay: { delay: 10 * 1000, disableOnInteraction: false },
+        loop: true,
+        pagination: { el: '.swiper-pagination' },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      var TOP_BAR_OFFSET = 48;
+      function scroller(query) {
+        var elements = document.querySelectorAll(query);
+        if (elements.length == 0) {
+          console.error(
+            "Selected query:",
+            query,
+            "are not found on this page."
+          );
+          return;
+        }
+        var rect = elements[0].getBoundingClientRect();
+        window.scrollTo({
+          top: rect.top + window.pageYOffset - TOP_BAR_OFFSET,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>
