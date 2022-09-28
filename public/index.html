@@ -13,12 +13,12 @@
     />
   </head>
   <body>
-    <img 
+    <img
       src="./assets/decorations/lt.svg"
       alt="背景デザイン画像1"
       class="page-bg-icon page-bg-icon-lt"
     />
-    <img 
+    <img
       src="./assets/decorations/rb.svg"
       alt="背景デザイン画像2"
       class="page-bg-icon page-bg-icon-rb"
@@ -26,7 +26,6 @@
     <div class="page-cover bg-3 text-dark">
       <h1 class="page-title text-1">Portfolio</h1>
 
-      
       <!-- <div class="card-cover bg-white">
         <h2 class="card-title-cover bg-2 text-light">
           <div class="card-title">English Title</div>
@@ -46,9 +45,9 @@
         </h2>
         <div class="card-contents">
           <div class="card-basic-info-layout">
-            <!--<div>
-              <img src="./assets/me.png" alt="顔写真" class="my-photo" />
-            </div>-->
+            <div>
+              <img src="./assets/me.jpg" alt="顔写真" class="my-photo" />
+            </div>
             <div style="flex-grow: 1">
               <div style="display: flex; gap: 1em; align-items: flex-end">
                 <h3 style="margin: 0; font-size: 2rem">斉藤 篤稀</h3>
@@ -86,7 +85,6 @@
           </p>-->
         </div>
       </div>
-      </div>
 
       <div style="height: 20px"></div>
 
@@ -96,6 +94,7 @@
           <button onclick="scroller('#hobby')">趣味</button>
           <button onclick="scroller('#skill')">スキル</button>
           <button onclick="scroller('#mywork')">制作物</button>
+          <button onclick="scroller('#licence')">帰属</button>
         </div>
       </div>
 
@@ -121,8 +120,13 @@
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="swiper-title">手前のラケットを構えている人が私です</div>
-              <img src="./assets/photos/11.jpg" alt="手前のラケットを構えている人が私です" />
+              <div class="swiper-title">
+                青い帽子のラケットを構えているのが私です
+              </div>
+              <img
+                src="./assets/photos/11.jpg"
+                alt="手前のラケットを構えている人が私です"
+              />
             </div>
             <div class="swiper-slide">
               <div class="swiper-title">サーブを打っている場面</div>
@@ -166,6 +170,11 @@
         <div class="card-contents tile-grid-cover">
           <div class="card-tile">
             <div class="card-tile-title">
+              <img
+                src="./assets/logos/html5.png"
+                width="80"
+                alt="HTML5 Powered with CSS3 / Styling"
+              />
               <span>HTML / CSS</span>
               <small>半年</small>
             </div>
@@ -178,6 +187,11 @@
 
           <div class="card-tile">
             <div class="card-tile-title">
+              <img
+                src="./assets/logos/nodejs.svg"
+                alt="Node.jsロゴ"
+                width="80"
+              />
               <span>JavaScript / Node.js</span>
               <small>半年</small>
             </div>
@@ -185,6 +199,18 @@
               　Web 系で最も有名な言語です。
               フロントサイドでは、動きのある動作を作るために使用しました。
               Node.js は、ビルドに使用したことがあります。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <img src="./assets/logos/php.png" alt="PHPロゴ" />
+              <span>PHP</span>
+              <small>半年</small>
+            </div>
+            <div class="card-tile-text">
+              　Web のサーバーサイドの言語です。Laravel というフレームワークで
+              データベースを操作する、アプリケーションを制作しました。
             </div>
           </div>
 
@@ -217,7 +243,7 @@
             </div>
             <div class="card-tile-text">
               　大学の講義で少し学習しました。
-              また、これから大学の講義などで使用していく予定です。 
+              また、これから大学の講義などで使用していく予定です。
             </div>
           </div>
 
@@ -246,7 +272,7 @@
           <div class="work">
             <div class="work-title">1. ポートフォリオサイト</div>
             <div class="work-image">
-              <img src="./assets/works/work11.png" alt="ポートフォリオ" />
+              <img src="./assets/works/work111.png" alt="ポートフォリオ" />
             </div>
             <div class="work-text">
               <p>
@@ -313,7 +339,130 @@
             </div>
           </div>
 
-          
+          <div class="work">
+            <div class="work-title">2. 匿名掲示板</div>
+            <div class="work-image">
+              <video controls autoplay muted loop>
+                <source src="./assets/works/work2.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+            <div class="work-text">
+              <p>
+                　サーバーサイドの練習のために、
+                誰でも利用可能な掲示板を作成しました。
+                書き込みをデータベースに保存し、他のユーザーからも閲覧できるようにしました。
+              </p>
+
+              <small>こだわりのポイント</small>
+              <ul>
+                <li>
+                  <div>投稿内容</div>
+                  自由なニックネームと投稿内容の2つだけのシンプルな構成です。
+                </li>
+                <li>
+                  <div>コンテナ化</div>
+                  Docker で PHP と MySQL を実行できるように構成しました。
+                </li>
+              </ul>
+
+              <small>使用した言語・ツール等</small>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+              </ul>
+
+              <small>参考にしたサイト</small>
+              <ul>
+                <li>
+                  <a
+                    href="https://techselect-study.careerselect.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tech Select 学習サイト
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="work">
+            <div class="work-title">3. To Do アプリ</div>
+            <div class="work-image">
+              <img src="./assets/works/work3.png" alt="To Do アプリ" />
+            </div>
+            <div class="work-text">
+              <p>
+                　PHP フレームワークの Laravel を使用して To Do
+                アプリを作成しました。
+                ログイン機能があり、ユーザーごとにタスクを管理できます。
+                シンプルな Web
+                アプリケーションですが、初期生成されたファイルが多く、大変でした。
+              </p>
+
+              <small>使用した言語・ツール等</small>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+              </ul>
+
+              <small>参考にしたサイト</small>
+              <ul>
+                <li>
+                  <a
+                    href="https://techselect-study.careerselect.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tech Select 学習サイト
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="licence">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Licence</div>
+          <div class="card-subtitle">帰属</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <ul>
+            <li>
+              <span>
+                HTML5 Logo by
+                <a href="https://www.w3.org/"
+                  ><abbr title="World Wide Web Consortium">W3C</abbr></a
+                > </span
+              >.
+            </li>
+            <li>
+              <span>
+                Node.js<sup>&reg;</sup> Logo by
+                <a href="https://nodejs.org/">OpenJS Foundation</a> </span
+              >.
+            </li>
+            <li>
+              <span>
+                PHP Logo by
+                <a href="https://www.php.net/credits.php">PHP Group</a> </span
+              >.
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div style="height: 40px"></div>
 
       <footer class="footer-cover bg-2 text-light">
@@ -324,15 +473,15 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.swiper-area', {
-        direction: 'horizontal',
+      var swiper = new Swiper(".swiper-area", {
+        direction: "horizontal",
         spaceBetween: 30,
         autoplay: { delay: 10 * 1000, disableOnInteraction: false },
         loop: true,
-        pagination: { el: '.swiper-pagination' },
+        pagination: { el: ".swiper-pagination" },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
 
